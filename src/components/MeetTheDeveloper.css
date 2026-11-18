@@ -5,7 +5,8 @@
 */
 .mtd {
   --s: 1.8vh;
-  position: relative;
+  /* Static, as live (._6sjiom1): its z-index -1 then has no effect. Positioning it would put the
+     whole section, project cards included, under <main>, which then takes every tap, click and swipe. */
   z-index: -1;
 }
 @media (max-width: 767.98px) and (orientation: portrait) {
